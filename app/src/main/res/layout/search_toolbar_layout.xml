@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:weightSum="100"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:id="@+id/back_arrow_container">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_back_arrow"
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/toolbar_back_arrow"
+            android:contentDescription="@string/back_arrow"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:visibility="gone"
+        android:id="@+id/toolbar_cancel_button_container">
+
+        <TextView
+            android:id="@+id/toolbar_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel_button"
+            android:textSize="22sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textStyle="normal"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="65"
+        android:id="@+id/toolbar_title"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="this is text"
+        android:padding="12dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="visible"/>
+
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="60"
+        android:id="@+id/home_search_ET"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/white"
+        android:paddingLeft="32dp"
+        android:inputType="text"
+        android:hint="@string/enter_country_name"
+        android:textColorHint="@color/lightGrey"
+        android:layout_gravity="center_vertical"
+        android:textSize="16sp"
+        android:background="@drawable/search_edit_text_bg"
+        android:visibility="gone"
+        android:imeOptions="actionDone"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:id="@+id/search_icon_container"
+        android:visibility="visible">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/search"
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/search_icon"
+            android:contentDescription="@string/search"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:id="@+id/menu_icon_container"
+        android:visibility="visible">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_menu_white"
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/home_menu"
+            android:contentDescription="@string/search"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

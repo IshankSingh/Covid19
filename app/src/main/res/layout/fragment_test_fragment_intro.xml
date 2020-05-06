@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".fragment.TestFragmentIntro">
+
+    <TextView
+        android:id="@+id/coronaVirus_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coronovirus_test"
+        android:textSize="36sp"
+        android:fontFamily="@font/open_sans"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/test_live_counter_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="54sp"
+        android:fontFamily="@font/open_sans"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/coronaVirus_tv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/counter_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/test_live_counter_tv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        android:fontFamily="@font/open_sans_light"
+        android:text="Total number of peoples taken this test so far."
+        android:textSize="18sp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/test_button"
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:padding="16dp"
+        android:text="@string/test_yourself"
+        android:textSize="24sp"
+        android:layout_marginTop="48dp"
+        android:textColor="@color/white"
+        android:background="@drawable/test_button_bg"
+        app:layout_constraintTop_toBottomOf="@id/counter_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/test_disclaimer_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/test_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="48dp"
+        android:text="Notice"
+        android:fontFamily="@font/open_sans"
+        android:textSize="28sp"
+        android:textAlignment="center"/>
+
+
+    <me.biubiubiu.justifytext.library.JustifyTextView
+        android:id="@+id/test_disclaimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/test_disclaimer_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/open_sans"
+        android:text="1. This test is just the prediction on the basis of your symptoms. \n\n2. The test result may not be accurate.\n\n3. This test does not guarantee any form of assurance.\n\n4. If you have any type of health issue please contact the doctors immediately.\n"
+        android:textSize="17sp"
+        android:textAlignment="center"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

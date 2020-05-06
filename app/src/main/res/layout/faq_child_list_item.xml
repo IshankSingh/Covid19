@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="6dp"
+    android:orientation="vertical" >
+
+
+    <me.biubiubiu.justifytext.library.JustifyTextView
+        android:id="@+id/faq_child_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingTop="2dp"
+        android:textAlignment="textStart"
+        android:lineSpacingMultiplier="1.1"
+        android:fontFamily="@font/open_sans_light"
+        android:textColor="#000"
+        />
+
+</LinearLayout>

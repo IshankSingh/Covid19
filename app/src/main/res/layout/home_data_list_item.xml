@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/home_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="36sp"
+                    android:textColor="@color/black"
+                    android:text="@string/global_data"
+                    android:fontFamily="@font/open_sans"
+                    android:layout_marginBottom="16dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="8dp"
+                    android:textAlignment="center"
+                    android:layout_centerVertical="true"
+                    android:paddingStart="33dp"
+                    android:layout_toStartOf="@id/rank_view_group"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/rank_view_group"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toStartOf="@id/home_popup_menu_image"
+                    android:layout_centerVertical="true"
+                    app:cardElevation="1dp"
+                    app:cardCornerRadius="25dp">
+
+                        <TextView
+                            android:id="@+id/home_rank_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="500"
+                            android:fontFamily="@font/open_sans_light"
+                            android:textSize="18sp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/home_popup_menu_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menu"
+                    android:fontFamily="@font/open_sans_light"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/popup_menu"/>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/home_country_total_cases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/total_cases"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="9dp"
+                android:layout_gravity="start"/>
+
+            <TextView
+                android:id="@+id/home_country_active_cases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="@string/total_cases"
+                android:fontFamily="@font/open_sans"
+                android:layout_marginBottom="9dp"
+                android:layout_gravity="start"/>
+
+            <TextView
+                android:id="@+id/home_country_recovered_cases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="@font/open_sans"
+                android:textColor="@color/black"
+                android:text="@string/total_cases"
+                android:layout_marginBottom="9dp"
+                android:layout_gravity="start"/>
+
+            <TextView
+                android:id="@+id/home_country_death_cases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="@string/total_cases"
+                android:fontFamily="@font/open_sans"
+                android:layout_marginBottom="9dp"
+                android:layout_gravity="start"/>
+
+            <TextView
+                android:id="@+id/home_country_new_cases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/total_cases"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="start"/>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/home_pie_chart"
+                android:layout_width="match_parent"
+                android:layout_height="220dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

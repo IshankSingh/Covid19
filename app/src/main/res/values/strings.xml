@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Live Data 19</string>
+    <string name="home">Home</string>
+    <string name="faq">FAQ</string>
+    <string name="news">News</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="global_data">Global Data</string>
+    <string name="total_cases">Total:</string>
+    <string name="global_cases">Total Cases: </string>
+    <string name="global_deaths">Death Cases: </string>
+    <string name="global_recovered">Recovered Cases: </string>
+    <string name="refresh">Refresh</string>
+    <string name="no_internet">No Internet</string>
+    <string name="no_internet_msg">Your network is unavailable. Check your data or wifi connection.</string>
+    <string name="enter_country_name">Enter country name</string>
+    <string name="search">search</string>
+    <string name="back_arrow">back arrow</string>
+    <string name="test">Test</string>
+    <string name="coronovirus_test">Coronovirus Test</string>
+    <string name="test_yourself">Test Yourself</string>
+    <string name="show_result">SHOW RESULT</string>
+    <string name="cancel_button">X</string>
+    <string name="share">Share</string>
+    <string name="popup_menu">popup_menu</string>
+    <string name="share_app">Share App</string>
+    <string name="finish">Finish</string>
+    <string name="more">Read more</string>
+    <string name="read_less">Read less</string>
+</resources>
